@@ -56,7 +56,9 @@
 							We work only in small towns. Thanks to this, we maintain quality and we
 							will not spray
 						</p>
-						<button class="hero-btn" type="button">Submit your application</button>
+						<button class="hero-btn" type="button" data-modal-open>
+							Submit your application
+						</button>
 					</div>
 					<img src="./image/hero-img.svg" alt="hero-img" width="572" height="560" />
 				</div>
@@ -219,5 +221,46 @@
 				<adress> <a href="tel:88006549732">8 (800) 654-97-32</a></adress>
 			</ul>
 		</footer>
+		<div class="backdrop is-hidden" data-modal>
+			<div class="modal-window">
+				<button type="button" class="model-btn-close" data-modal-close>X</button>
+				<p class="modal-subtitle">Contact Us</p>
+				<p class="modal-title"><span>Contact</span> Us & We Can Work Together</p>
+				<p class="modal-text">
+					Lorem ipsum dolor sit amet consectetur. Adipiscing nisl id at arcu enim id
+					gravida pulvinar. Tristique consectetur mi curabitur congue enim dignissim
+				</p>
+				<form class="model-form">
+					<label for="user-name" class="modal-label">
+						<input
+							type="text"
+							placeholder="Your Name"
+							name="user-name"
+							id="user-name"
+							class="modal-input"
+						/>
+					</label>
+					<label for="user-email" class="modal-label">
+						<input
+							type="text"
+							placeholder="Your Email"
+							name="user-email"
+							id="user-email"
+							class="modal-input"
+						/>
+					</label>
+					<label for="user-message" class="modal-textarea">
+						<textarea
+							name="user-message"
+							placeholder="Your Message"
+							id="user-message"
+							class="modal-input-text"
+						></textarea>
+					</label>
+					<button type="submit" class="modal-btm-submit">Submit Message</button>
+				</form>
+			</div>
+		</div>
+		<script src="./js/modal.js"></script>
 	</body>
 </html>

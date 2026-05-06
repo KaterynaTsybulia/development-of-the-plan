@@ -25,6 +25,8 @@ ol {
 
 button {
 	cursor: pointer;
+	font-family: inherit;
+	color: currentColor;
 }
 
 a {
@@ -45,6 +47,17 @@ img {
 	padding-left: 15px;
 	margin: 0 auto;
 }
+
+input {
+	font-family: inherit;
+}
+
+fieldset {
+	padding: 0;
+	margin: 0;
+	border: none;
+}
+
 /* ---------------HEADER--------------- */
 
 .header {
@@ -182,5 +195,160 @@ img {
 	font-weight: 400;
 	font-size: 18px;
 	line-height: 1.5;
+	color: #fff;
+}
+
+/* ---------------MODAL--------------- */
+
+.backdrop {
+	background: rgba(0, 0, 0, 0.56);
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.is-hidden {
+	opacity: 0;
+	visibility: hidden;
+	pointer-events: none;
+}
+.modal-window {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 650px;
+	min-height: 854px;
+	background: #fff;
+	padding: 76px 67px 75px 50px;
+}
+
+.model-btn-close {
+	position: absolute;
+	top: 24px;
+	right: 24px;
+	border-radius: 50%;
+	border: none;
+	background: #275f7a;
+	width: 40px;
+	height: 40px;
+	color: #fff;
+}
+
+.modal-subtitle {
+	display: flex;
+	align-items: center;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 1.55;
+	letter-spacing: 0.03em;
+	text-align: justify;
+	color: #000;
+	gap: 12px;
+	margin-bottom: 19px;
+}
+
+.modal-subtitle::before {
+	display: block;
+	content: "";
+	width: 143px;
+	height: 2px;
+	background-color: #d8d8d8;
+}
+
+.modal-title {
+	font-weight: 700;
+	font-size: 48px;
+	line-height: 1.255;
+	letter-spacing: 0.03em;
+	color: #022c40;
+	margin-bottom: 31px;
+}
+
+.modal-title span {
+	color: #000;
+}
+
+.modal-text {
+	font-size: 16px;
+	line-height: 1.55;
+	letter-spacing: 0.03em;
+	text-align: justify;
+	color: #022c40;
+	margin-bottom: 23px;
+}
+
+.model-form {
+}
+
+.modal-label {
+	display: block;
+	margin-bottom: 23px;
+}
+
+.modal-input {
+	width: 100%;
+	height: 60px;
+	border: 1px solid #cacaca;
+	border-radius: 5px;
+	padding-left: 21px;
+	outline: none;
+	transition: border-color 250ms ease-in-out;
+}
+
+.modal-input::placeholder {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 1.55;
+	letter-spacing: 0.03em;
+	text-align: justify;
+	color: #000;
+}
+
+.modal-input:focus {
+	border-color: #275f7a;
+}
+
+.modal-textarea {
+	display: block;
+	margin-bottom: 33px;
+}
+
+.modal-input-text {
+	border: 1px solid #cacaca;
+	border-radius: 5px;
+	width: 100%;
+	height: 149px;
+	padding: 21px;
+	resize: none;
+	outline: none;
+	transition: border-color 250ms ease-in-out;
+}
+
+.modal-input-text::placeholder {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 1.55;
+	letter-spacing: 0.03em;
+	text-align: justify;
+	color: #000;
+}
+
+.modal-input-text:focus {
+	border-color: #275f7a;
+}
+
+.modal-btm-submit {
+	min-width: 181px;
+	height: 48px;
+	border-radius: 5px;
+	background: #022c40;
+	border: none;
+
+	font-size: 16px;
+	letter-spacing: 0.03em;
+	text-align: center;
 	color: #fff;
 }
